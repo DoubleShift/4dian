@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/top_relative"
+    android:background="@color/vpi__background_holo_light" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_relative"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0dip"
+        android:scrollbarThumbVertical="@drawable/scrollview_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageView_avatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/progressBar_invest"
+                android:layout_alignTop="@+id/textView_getup_days"
+                android:paddingLeft="10dp"
+                android:src="@drawable/normal" />
+
+            <TextView
+                android:id="@+id/TextView_personal_name"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/button_goal_show"
+                android:layout_alignRight="@+id/textView_con_days"
+                android:layout_below="@+id/imageView_avatar"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="10dp"
+                android:text="Allsum7_夏染七日"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_getup_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/imageView_avatar"
+                android:text="早起天数"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_con_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView_getup_days"
+                android:layout_alignBottom="@+id/textView_getup_days"
+                android:layout_alignRight="@+id/progressBar_invest"
+                android:layout_marginRight="15dp"
+                android:text="连续天数"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_getup_day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView_avatar"
+                android:layout_alignLeft="@+id/textView_getup_days"
+                android:layout_marginLeft="20dp"
+                android:text="90"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_con_day_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/TextView_personal_name"
+                android:layout_alignLeft="@+id/textView_con_days"
+                android:layout_marginLeft="20dp"
+                android:text="40"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_invest"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/button_goal_show"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar_green" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_waste"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/progressBar_invest"
+                android:layout_marginTop="16dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar_red" />
+
+            <ProgressBar
+                android:id="@+id/progressBar_total"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/progressBar_waste"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar_yellow" />
+
+            <TextView
+                android:id="@+id/textView_progressBar_invest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar_waste"
+                android:layout_alignRight="@+id/button_goal_show"
+                android:text="投资 (419/2500小时) 16.0%"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_progressBar_waste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/progressBar_total"
+                android:layout_alignRight="@+id/textView_progressBar_invest"
+                android:text="浪费 (176/2500小时) 7.0%"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView_progressBar_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/textView_progressBar_waste"
+                android:text="期限 (73/285天) 25.0%"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/button_goal_show"
+                android:background="@drawable/blue"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/TextView_personal_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:clickable="false"
+                android:text="挑战进度   for 考上bupt_CS！ "
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_get1up"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/getup"
+        android:paddingBottom="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/top_relative"
+    android:background="@color/vpi__background_holo_light"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0.0dip"
+    android:scrollbarThumbVertical="@drawable/scrollview_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView_sleep_string"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:text="@string/sleep"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_regular_string"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_sleep_string"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="65dp"
+                android:text="@string/regular"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_waste_string"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_regular_string"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="65dp"
+                android:text="@string/waste"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView_invest_string"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView_waste_string"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="65dp"
+                android:text="@string/invest"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" >
+
+                <com.me.util.MySeekBar
+                    android:id="@+id/seekBar_sleep"
+                    android:layout_width="40dp"
+                    android:layout_height="220dp"
+                    android:max="100"
+                    android:progress="6"
+                    android:progressDrawable="@drawable/seekbar_blue"
+                    android:thumb="@drawable/sb_thumb" />
+
+                <TextView
+                    android:id="@+id/textView_sleep_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <com.me.util.MySeekBar
+                    android:id="@+id/seekBar_regular"
+                    android:layout_width="40dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:max="100"
+                    android:progress="6"
+                    android:progressDrawable="@drawable/seekbar_yellow"
+                    android:thumb="@drawable/sb_thumb" />
+
+                <TextView
+                    android:id="@+id/textView_regular_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <com.me.util.MySeekBar
+                    android:id="@+id/seekBar_waste"
+                    android:layout_width="40dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:max="100"
+                    android:progress="6"
+                    android:progressDrawable="@drawable/seekbar_red"
+                    android:thumb="@drawable/sb_thumb" />
+
+                <TextView
+                    android:id="@+id/textView_waste_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+
+                <com.me.util.MySeekBar
+                    android:id="@+id/seekBar_invest"
+                    android:layout_width="40dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:max="100"
+                    android:progress="6"
+                    android:progressDrawable="@drawable/seekbar_green"
+                    android:thumb="@drawable/sb_thumb" />
+
+                <TextView
+                    android:id="@+id/textView_invest_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView_harvest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gain"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/editText_note"
+                style="@style/SWInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/write_your_gain"
+                android:ems="10"
+                android:gravity="left"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:minWidth="250dp" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_set_time"
+            style="@style/SWBaseButton.Normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minWidth="280dp"
+            android:text="@string/timemanagement_set_time" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+</ScrollView>

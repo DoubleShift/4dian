@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">0.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    
+    
+     <dimen name="default_circle_indicator_radius">3.0dip</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_line_indicator_line_width">12.0dip</dimen>
+    <dimen name="default_line_indicator_gap_width">4.0dip</dimen>
+    <dimen name="default_line_indicator_stroke_width">1.0dip</dimen>
+    <dimen name="default_title_indicator_clip_padding">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_line_height">2.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_height">4.0dip</dimen>
+    <dimen name="default_title_indicator_footer_indicator_underline_padding">20.0dip</dimen>
+    <dimen name="default_title_indicator_footer_padding">7.0dip</dimen>
+    <dimen name="default_title_indicator_text_size">15.0dip</dimen>
+    <dimen name="default_title_indicator_title_padding">5.0dip</dimen>
+    <dimen name="default_title_indicator_top_padding">7.0dip</dimen>
+    <dimen name="header_text_size">24.0sp</dimen>
+    <dimen name="big_text_size">25.0sp</dimen>
+    <dimen name="word_text_size">20.0sp</dimen>
+    <dimen name="normal_text_size">17.0sp</dimen>
+    <dimen name="small_text_size">14.0sp</dimen>
+    <dimen name="tiny_text_size">11.0sp</dimen>
+    <dimen name="avatar_width">66.66998dip</dimen>
+    <dimen name="avatar_height">66.66998dip</dimen>
+    <dimen name="avatar_padding">6.669983dip</dimen>
+    <dimen name="home_horizon_margin">6.669983dip</dimen>
+    <dimen name="main_margin">5.0dip</dimen>
+    <dimen name="test_padding">21.329987dip</dimen>
+    <dimen name="test_padding_vertical">8.0dip</dimen>
+   
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/vpi__background_holo_light" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/title_bg_bar" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="@string/goal_setting"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/goal_setting_save"
+            style="@style/SWBaseButton.Normal"
+            android:layout_width="60.0dip"
+            android:layout_height="35.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="@string/title_save" />
+        
+         <Button
+            android:id="@+id/goal_setting_back"
+            style="@style/SWBaseButton.Normal"
+            android:layout_width="60.0dip"
+            android:layout_height="35.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5.0dip"
+            android:layout_marginBottom="5.0dip"
+            android:text="@string/title_back" />
+    </RelativeLayout>
+
+  <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_relative"
+        android:scrollbarThumbVertical="@drawable/scrollview_bg"
+        android:fadingEdgeLength="0.0dip"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12.0dip"
+            android:paddingRight="12.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                style="@style/SWInputContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/SWInputLabel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:text="@string/goal_setting_dream" />
+
+                <EditText
+                    android:id="@+id/goal_setting_dream"
+                    style="@style/SWInput"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SWInputContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/SWInputLabel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:text="@string/goal_setting_level" />
+
+                <EditText
+                    android:id="@+id/goal_setting_level"
+                    style="@style/SWInput"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65"
+                     />
+
+              
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/SWInputContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/SWInputLabel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:text="@string/goal_setting_time" />
+
+                <EditText
+                    android:id="@+id/goal_setting_time"
+                    style="@style/SWInput"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65" >
+
+                   
+                </EditText>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                style="@style/SWInputContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/SWInputLabel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:text="@string/goal_setting_deadline" />
+
+                <EditText
+                    android:id="@+id/goal_setting_deadline"
+                    style="@style/SWInput"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65" >
+
+                    
+                </EditText>
+            </LinearLayout>
+            
+            <LinearLayout
+                style="@style/SWInputContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    style="@style/SWInputLabel"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:text="@string/goal_setting_everyday" />
+
+                <EditText
+                    android:id="@+id/goal_setting_everyday"
+                    style="@style/SWInput"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.65" >
+
+                  
+                </EditText>
+            </LinearLayout>
+            
+           
+            <Button
+                android:id="@+id/btn_goal_setting_confirm"
+                style="@style/SWBaseButton.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12.0dip"
+                android:text="@string/goal_setting_confirm" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

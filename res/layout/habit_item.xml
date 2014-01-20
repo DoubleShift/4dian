@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+    
+    <TextView
+        android:id="@+id/habit_textView_time_detail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="#999999" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/habit_textView_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:text="6"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/yellow_icon" >
+    </TextView>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:background="@drawable/item_right_bg" >
+
+        <LinearLayout
+            android:id="@+id/habit_linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp" >
+
+            <TextView
+                android:id="@+id/habit_textView_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#23a7ff" >
+            </TextView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
