@@ -1,1 +1,0 @@
-xcopy /S /y D:\CMCC\Dev\workspace\com.me.dian.WelcomeActivity\* D:\MyProject\Github\4dian
